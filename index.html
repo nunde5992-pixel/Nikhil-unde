@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Devyani</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #ff8fb3, #ffb6c9, #ffd1dc);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .page {
+            min-height: 100vh;
+            padding: 50px 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            max-width: 750px;
+            width: 100%;
+            padding: 35px 25px;
+            background: rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255,255,255,0.4);
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(150, 30, 70, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            font-size: 42px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            text-shadow: 0 4px 12px rgba(120, 20, 60, 0.25);
+        }
+
+        .message {
+            color: white;
+            font-size: 19px;
+            line-height: 1.9;
+            margin: 20px auto;
+            max-width: 650px;
+        }
+
+        .photo {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 7px solid white;
+            margin: 25px;
+            box-shadow: 0 0 35px rgba(255,255,255,0.8);
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 40px;
+            background: white;
+            color: #e75480;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(100, 20, 50, 0.25);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.08);
+        }
+
+        #surprise {
+            display: none;
+            animation: appear 1s ease;
+        }
+
+        .surprise-card {
+            background: white;
+            color: #d94f78;
+            max-width: 700px;
+            margin: auto;
+            padding: 35px 25px;
+            border-radius: 30px;
+            box-shadow: 0 15px 45px rgba(120, 20, 60, 0.3);
+        }
+
+        .surprise-card h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .surprise-text {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .small-note {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #b83f65;
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -30px;
+            font-size: 22px;
+            animation: floatUp 5s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes floatUp {
+            from {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.8;
+            }
+
+            to {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FIRST PAGE -->
+
+    <div class="page" id="firstPage">
+
+        <div class="card">
+
+            <h1>HAPPY BIRTHDAY DEVYANI</h1>
+
+            <p class="message">
+                I wanted to do something a little different for your birthday,
+                so I actually took some time to make this for you. I know it
+                isn't some huge thing, but I wanted it to be something that
+                you could look at and know that someone genuinely put effort
+                into making your day a little more special.
+
+                <br><br>
+
+                I hope you have a really good birthday and that today gives
+                you plenty of reasons to smile. You are honestly a really nice
+                person, and I'm glad that I got the chance to know you.
+
+                <br><br>
+
+                I hope this year brings you good memories, happiness, success,
+                and a lot of moments that you'll remember for a long time.
+                Whatever happens, I hope you keep being yourself and keep that
+                same smile that makes you stand out.
+
+                <br><br>
+
+                Anyway, I won't make this paragraph unnecessarily emotional.
+                Just know that I genuinely wanted to wish you properly,
+                because you deserve a birthday that feels special.
+
+                <br><br>
+
+                So, Happy Birthday Devyani. I hope you have an amazing day
+                and an even better year ahead.
+            </p>
+
+            <img src="birthday.jpg" class="photo">
+
+            <br>
+
+            <button onclick="showSurprise()">
+                CLICK ME
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- SECOND PAGE / SURPRISE -->
+
+    <div class="page" id="surprise">
+
+        <div class="surprise-card">
+
+            <h2>A Small Something I Made For You</h2>
+
+            <p class="surprise-text">
+                Okay, so you actually clicked it.
+
+                <br><br>
+
+                I was going to write something extremely impressive here,
+                but then I remembered that you already rejected me once,
+                so I thought I should probably not get too confident.
+
+                <br><br>
+
+                Don't worry, I'm not bringing up the rejection to make things
+                awkward. I'm just using it as my favourite opportunity for a
+                terrible joke.
+
+                <br><br>
+
+                But seriously, even after all the jokes, I genuinely wanted
+                to make something for your birthday. I could have just sent
+                a normal birthday message, but where's the fun in that?
+
+                <br><br>
+
+                I hope you liked this little website. I actually put effort
+                into making it, so if it looks slightly dramatic, just pretend
+                that was completely intentional.
+
+                <br><br>
+
+                Most importantly, I hope you have an amazing birthday,
+                make some great memories, and have a year that turns out
+                better than you expect.
+
+                <br><br>
+
+                And yes, before you ask...
+
+                <br>
+
+                No, the rejection joke wasn't necessary.
+
+                <br>
+
+                But I was going to make it anyway.
+
+            </p>
+
+            <p class="small-note">
+                Made with way too much effort for one birthday website.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function showSurprise() {
+
+            document.getElementById("firstPage").style.display = "none";
+
+            document.getElementById("surprise").style.display = "flex";
+
+            createHearts();
+        }
+
+
+        function createHearts() {
+
+            for (let i = 0; i < 25; i++) {
+
+                let heart = document.createElement("div");
+
+                heart.className = "heart";
+
+                heart.innerHTML = "♥";
+
+                heart.style.left = Math.random() * 100 + "%";
+
+                heart.style.animationDelay =
+                    Math.random() * 4 + "s";
+
+                heart.style.animationDuration =
+                    4 + Math.random() * 4 + "s";
+
+                document.body.appendChild(heart);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
